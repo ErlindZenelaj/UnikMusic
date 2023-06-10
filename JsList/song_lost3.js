@@ -1,4 +1,4 @@
-//song list
+
 let All_song = [
     {
       name: "Jasht (Intro)",
@@ -91,13 +91,9 @@ let All_song = [
       singer: "Unikkatil"
     }
  ];
- /*you can add more song & images from you computer*/
- 
- 
- /*tracks*/
+
  let tracks = document.querySelector('.tracks');
- 
- //creating a list or generating Html
+
  for (let i = 0; i < All_song.length; i++) {
  
    let Html = ` <div class="song">

@@ -1,4 +1,4 @@
-//song list
+
 let All_song = [
     {
       name: "Ala",
@@ -72,10 +72,7 @@ let All_song = [
       singer: "Unikkatil"
     }
  ];
- /*you can add more song & images from you computer*/
- 
- 
- /*tracks*/
+
  let tracks = document.querySelector('.tracks');
  
  //creating a list or generating Html
@@ -98,5 +95,3 @@ let All_song = [
    tracks.insertAdjacentHTML("beforeend", Html);
  };
  
- 
- /*please follow all the rules so that you do not face any problem*/

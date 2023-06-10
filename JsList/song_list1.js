@@ -1,4 +1,4 @@
-//song list
+
 let All_song = [
     {
       name: "Mos T'vjen Ináti ft. The Bloody Alboz",
@@ -82,13 +82,10 @@ let All_song = [
       singer: "Unikkatil"
     }
  ];
- /*you can add more song & images from you computer*/
- 
- 
- /*tracks*/
+
  let tracks = document.querySelector('.tracks');
  
- //creating a list or generating Html
+
  for (let i = 0; i < All_song.length; i++) {
  
    let Html = ` <div class="song">
@@ -109,4 +106,3 @@ let All_song = [
  };
  
  
- /*please follow all the rules so that you do not face any problem*/

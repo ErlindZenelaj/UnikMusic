@@ -1,48 +1,85 @@
 *{
-    margin: 2px 2px;
-    
-}
-
-.navbar {
-  font-size: 2rem; /* Adjust the font size as needed */
-}
-
-.navbar-brand img {
-  width: 80px; /* Adjust the width as needed */
-  height: 70px; /* Adjust the height as needed */
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem; /* Adjust the font size as needed */
-}
-
-.navbar-collapse {
-  font-size: 1rem; /* Adjust the font size as needed */
-}
-
-.form-control {
-  font-size: 1rem; /* Adjust the font size as needed */
+  margin: 2px 2px;
+  
 }
 
 
 .btn-outline-success {
-  font-size: 1rem; /* Adjust the font size as needed */
+font-size: 1rem; /* Adjust the font size as needed */
 }
 
 .profile-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-  }
+}
 
-  .profile-photo {
-    text-align: center;
-  }
+.profile-photo {
+  text-align: center;
+  width: 420px;
+}
 
-  .profile-details {
-    padding: 20px;
-  }
+.profile-details {
+  padding: 20px;
+}
 
-  .profile-details p {
-    margin-bottom: 15px;
+.profile-details p {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.profile-details ul{
+  padding: 20px;
+  font-size: 12px;
+}
+
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.audio-player #audio {
+  width: 250px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 5s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the image */
+.profile-photo img {
+  animation: zoom 4s ease-in-out infinite;
+}
+
+.text {
+  font-size: 14px;
+}

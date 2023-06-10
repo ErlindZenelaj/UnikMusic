@@ -1,9 +1,29 @@
+*{
+  margin: 2px 2px;
+}
 body {
     background-image: url("../img/");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+.navbar {
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+.navbar-brand img {
+  width: 80px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+}
+.navbar-nav .nav-link {
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+.navbar-collapse {
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+.form-control {
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
   
   .container {
     width: 100%;

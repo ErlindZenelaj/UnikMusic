@@ -194,3 +194,4 @@ function play_song(){
   current_singer_name.innerHTML = All_song[index_no].singer;
   play_pause_btn.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
 }
+

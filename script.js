@@ -20,4 +20,11 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
   });
 
+let myAudio = document.querySelector('#audio')
+myAudio.play(),
+myAudio.volume = 0.5
 
+
+function videoUrl(hmmmmmm){
+  document.getElementById("slider").src = hmmmmmm;
+}

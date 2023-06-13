@@ -14,7 +14,7 @@
     <script src="https://pixijs.download/release/pixi.js"></script>
 
 
-    <title>New Music</title>-
+    <title>New Music</title>
     <link rel="stylesheet" href="./CSS/biografia.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./CSS/music.css">
@@ -44,19 +44,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./NewMusic.html">New Music</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+            
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="./Team.html">Team</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -69,34 +59,34 @@
 
     <canvas id="mycanvas"></canvas>
     <script>
-  const app = new PIXI.Application({
-  width: 500, // Adjust the width to make the background smaller
-  height: 350, // Adjust the height to make the background smaller
-  backgroundAlpha: 0
-});
-document.body.appendChild(app.view);
+      const app = new PIXI.Application({
+      width: 500, // Adjust the width to make the background smaller
+      height: 350, // Adjust the height to make the background smaller
+      backgroundAlpha: 0
+    });
+    document.body.appendChild(app.view);
 
-// create a new Sprite from an image path.
-const bunny = PIXI.Sprite.from('./sprite.png');
+    // create a new Sprite from an image path.
+    const bunny = PIXI.Sprite.from('./sprite.png');
 
-// center the sprite's anchor point
-bunny.anchor.set(0.5);
+    // center the sprite's anchor point
+    bunny.anchor.set(0.5);
 
-// move the sprite to the center of the screen
-bunny.x = app.screen.width / 2.5;
-bunny.y = app.screen.height / 2.4;
+    // move the sprite to the center of the screen
+    bunny.x = app.screen.width / 2.5;
+    bunny.y = app.screen.height / 2.4;
 
-// Adjust the scale to make the photo smaller
-const scaleFactor = 0.4; // Smaller value for a smaller size
+    // Adjust the scale to make the photo smaller
+    const scaleFactor = 0.4; // Smaller value for a smaller size
 
-bunny.scale.set(scaleFactor);
+    bunny.scale.set(scaleFactor);
 
-app.stage.addChild(bunny);
+    app.stage.addChild(bunny);
 
-app.ticker.add(() => {
-  // just for fun, let's rotate mr rabbit a little
-  bunny.rotation += 0.03;
-});
+    app.ticker.add(() => {
+      // just for fun, let's rotate mr rabbit a little
+      bunny.rotation += 0.03;
+    });
 
     </script>
 
